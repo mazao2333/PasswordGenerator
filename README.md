@@ -1,0 +1,2 @@
+clone下来先npm install
+打包用npm run pack，已经在package.json里配置好了打包参数
