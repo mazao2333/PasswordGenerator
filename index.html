@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    /> -->
+    <title>随机密码生成器</title>
+  </head>
+  <body>
+    <h2 id="placer">密码：</h2>
+    <p><input type="checkbox" id="containsNumber" />数字</p>
+    <p><input type="checkbox" id="containsUpper" />大写字母</p>
+    <p><input type="checkbox" id="containsLowwer" />小写字母</p>
+    <p>密码长度：<input type="text" id="pwLength" /></p>
+    <p>
+      <input
+        type="button"
+        value="生成密码"
+        onclick="randomPassword(document.getElementById('pwLength').value)"
+      />
+      <input type="button" value="复制到剪贴板" onclick="copy2Clipboard()" />
+    </p>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

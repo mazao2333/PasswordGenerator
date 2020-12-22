@@ -1,0 +1,14 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "password generator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . PasswordGenerator --win --out ../executable --arch=x64 --app-version=1.0.0 --electron-version=11.1.0"
+  },
+  "author": "mazao",
+  "devDependencies": {
+    "electron": "^11.1.0"
+  }
+}
